@@ -6,7 +6,7 @@ import ListadoPacientes from "./components/ListadoPacientes";
 
 function App() {
 
-  const Initial = JSON.parse(localStorage.getItem("pacientes")) || [];
+  const Initial = JSON.parse(localStorage.getItem("pacientes")) ?? [];
   const [pacientes, setPacientes] = useState(Initial);
   const [paciente, setPaciente] = useState({});
 
